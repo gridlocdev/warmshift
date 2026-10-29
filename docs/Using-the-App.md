@@ -44,7 +44,9 @@ Click the icon to open it:
 
 ## The settings window
 
-![The settings window](images/settings.webp)
+<p align="center">
+  <img src="images/settings.webp" width="420" alt="The settings window">
+</p>
 
 Changes take effect straight away; there's no Save button. If you move a time or slider during
 the evening, the screen moves to the new warmth within a few seconds.

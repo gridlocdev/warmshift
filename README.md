@@ -4,7 +4,9 @@ Warm up your Mac's screen slowly through the evening instead of all at once. War
 the menu bar and moves Night Shift's **Less Warm ↔ More Warm** slider from the middle to fully
 warm over the hours you choose, keeps it there overnight, and sets it back in the morning.
 
-![WarmShift settings window: start, end and reset times, start and end warmth sliders, a curve picker, a 24-hour chart of warmth, and behavior options](docs/images/settings.webp)
+<p align="center">
+  <img src="docs/images/settings.webp" width="420" alt="WarmShift settings window: start, end and reset times, start and end warmth sliders, a curve picker, a 24-hour chart of warmth, and behavior options">
+</p>
 
 ## What it does
 
