@@ -11,7 +11,7 @@ There are no prebuilt downloads yet, so you build it from the source code. That 
 Then, in Terminal:
 
 ```bash
-git clone <this repository's URL> warmshift
+git clone https://github.com/gridlocdev/warmshift.git
 cd warmshift
 just install
 ```
