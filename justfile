@@ -36,6 +36,10 @@ install: (bundle "release")
     open ~/Applications/WarmShift.app
     @echo "Installed ~/Applications/WarmShift.app"
 
+# Regenerate Resources/icon.icns from assets/icon.svg (needs Inkscape)
+icons:
+    scripts/make-icons.sh
+
 # Format sources with swift-format (ships with Xcode)
 fmt:
     xcrun swift-format format --in-place --recursive Sources Tests

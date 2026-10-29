@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- WarmShift app icon source. 1024 canvas on Apple's icon grid: an 824-unit tile at (100,100)
+     with a transparent margin. Regenerate the bundle icon with `just icons`. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <!-- userSpaceOnUse, so the inner flame (filled with it) matches the tile behind it exactly. -->
+    <linearGradient id="tile" gradientUnits="userSpaceOnUse" x1="0" y1="100" x2="0" y2="924">
+      <stop offset="0" stop-color="#FFA94D" />
+      <stop offset="1" stop-color="#E8590C" />
+    </linearGradient>
+  </defs>
+
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#tile)" />
+
+  <!-- Nudged so the flame and logs together are optically centred. -->
+  <g transform="translate(0 -24)">
+    <!-- Two crossed logs. -->
+    <g stroke="#FFFFFF" stroke-width="64" stroke-linecap="round">
+      <line x1="318" y1="700" x2="706" y2="796" />
+      <line x1="318" y1="796" x2="706" y2="700" />
+    </g>
+    <!-- Flame, outlined in the tile colour so it stands apart from the logs. -->
+    <path d="M 512 236 C 566 332 682 404 682 536 C 682 628 606 690 512 690 C 418 690 342 628 342 536 C 342 432 432 378 512 236 Z"
+          fill="#FFFFFF" stroke="url(#tile)" stroke-width="28" />
+    <!-- Inner flame cut out of it. -->
+    <path d="M 512 468 C 542 518 594 548 594 598 C 594 640 558 666 512 666 C 466 666 430 640 430 598 C 430 548 482 518 512 468 Z"
+          fill="url(#tile)" />
+  </g>
+</svg>

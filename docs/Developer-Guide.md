@@ -43,7 +43,10 @@ Sources/WarmShift/          the app
   SettingsView.swift        settings form and the 24 h chart (Swift Charts)
 Tests/WarmShiftCoreTests/   Swift Testing tests for Schedule
 Resources/Info.plist        bundle info; LSUIElement hides the Dock icon
+Resources/icon.icns         app icon, generated from assets/icon.svg
+assets/icon.svg             app icon source
 scripts/bundle.sh           builds and signs build/WarmShift.app
+scripts/make-icons.sh       renders the icon (just icons)
 docs/                       these pages
 ```
 
@@ -85,6 +88,15 @@ calls these Objective-C methods through `method(for:)` cast to `@convention(c)` 
 `isAvailable` checks that the class exists and responds to all five selectors. If any check
 fails, the app shows *Night Shift isn't available* and makes no calls. When a macOS update comes
 out, re-check these first.
+
+## App icon
+
+The icon is drawn by hand in `assets/icon.svg`: a white campfire on an orange gradient tile,
+on Apple's 1024 icon grid (an 824-unit tile at 100,100 with a transparent margin). Since
+WarmShift has no Dock icon, it mostly shows in Finder and in System Settings → Login Items.
+
+After editing the SVG, run `just icons` (needs Inkscape: `brew install --cask inkscape`). It
+regenerates `Resources/icon.icns`, which is committed so builds don't need Inkscape.
 
 ## Signing
 

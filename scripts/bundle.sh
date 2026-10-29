@@ -14,6 +14,7 @@ rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp "$BIN" "$APP/Contents/MacOS/WarmShift"
 cp Resources/Info.plist "$APP/Contents/Info.plist"
+cp Resources/icon.icns "$APP/Contents/Resources/icon.icns"
 
 # Launch at login (SMAppService) needs a signed bundle. Use an Apple developer identity
 # when there is one so macOS keeps the login item across rebuilds; else ad-hoc ("-").
